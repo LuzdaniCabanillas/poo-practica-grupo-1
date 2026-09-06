@@ -1,6 +1,5 @@
-GRUPO 01
-Integrantes:
-Luzdany Fiorela Cabanillas Pizarro 
-Victor Josue Castro Bayeto 
-Segio Gustavo Mori Ahuanari 
-Lenin Anderson Mendo Cotrina 
+**GRUPO 01 Integrantes:**
+1. Luzdany Fiorela Cabanillas Pizarro  
+2. Victor Josue Castro Bayeto  
+3. Sergio Gustavo Mori Ahuanari  
+4. Lenin Anderson Mendo Cotrina
