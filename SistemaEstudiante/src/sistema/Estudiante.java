@@ -75,6 +75,18 @@ public class Estudiante {
         this.calificaciones = calificaciones;
     }
     
+    
+    public void registrarCalificacion(double calificacion) {
+
+        if (calificacion < 0 || calificacion > 20) {
+            throw new IllegalArgumentException(
+                "La calificación debe estar entre 0 y 20."
+            );
+        }
+
+        calificaciones.add(calificacion);
+    }
+    
 
     
     
