@@ -196,5 +196,29 @@ public class SistemaEstudiante {
             );
         }
     }
-    
+
+    // BUSCAR ESTUDIANTE
+    public static void buscarEstudiante(
+            Scanner teclado,
+            GestorEstudiantes gestorEst) {
+
+        System.out.println("\n=== BUSCAR ESTUDIANTE ===");
+
+        System.out.print("Ingrese el código: ");
+        String codigo = teclado.nextLine();
+
+        Estudiante encontrado = gestorEst.buscar(codigo);
+
+        if (encontrado != null) {
+
+            System.out.println("\nEstudiante encontrado:");
+            encontrado.mostrarDatos();
+
+        } else {
+
+            System.out.println(
+                    "No existe un estudiante con el código: " + codigo
+            );
+        }
+    }
 }
