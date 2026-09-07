@@ -86,8 +86,22 @@ public class Estudiante {
 
         calificaciones.add(calificacion);
     }
-    
 
+    
+    public double calcularPromedio() {
+
+        if (calificaciones.isEmpty()) {
+            return 0;
+        }
+
+        double suma = 0;
+
+        for (double calificacion : calificaciones) {
+            suma += calificacion;
+        }
+
+        return suma / calificaciones.size();
+    }
     
     
 }
