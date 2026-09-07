@@ -101,7 +101,10 @@ public class Estudiante {
         }
 
         return suma / calificaciones.size();
+        
     }
+    
+    
     
     
 }
