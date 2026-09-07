@@ -15,7 +15,7 @@ public class Estudiante {
         
         if(!codigo.matches("N[0-9]{8}")){
          throw new IllegalArgumentException(
-                    "El código debe iniciar con N y tener 8 números" 
+                    "El código debe iniciar la letra N seguidos de 8 números" 
          );
         }
         
