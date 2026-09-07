@@ -13,7 +13,11 @@ public class Estudiante {
 
     public Estudiante(String codigo, String nombre, String correo, String curso, String carrera) {
         
-        
+        if(!codigo.matches("N[0-9]{8}")){
+         throw new IllegalArgumentException(
+                    "El código debe iniciar la letra N seguidos de 8 números" 
+         );
+        }
         
         this.codigo = codigo;
         this.nombre = nombre;
