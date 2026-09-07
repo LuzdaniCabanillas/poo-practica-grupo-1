@@ -105,6 +105,18 @@ public class Estudiante {
     }
     
     
+    public void mostrarDatos() {
+
+        System.out.println("Código: " + codigo);
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Correo: " + correo);
+        System.out.println("Curso: " + curso);
+        System.out.println("Carrera:ING DE SISTEMAS COMPUTACIONALES");
+        System.out.printf("Promedio: %.1f%n", calcularPromedio());
+        System.out.println("---------------------");
+
+    }
+    
     
     
 }
