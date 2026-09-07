@@ -27,6 +27,55 @@ public class Estudiante {
         this.calificaciones = new ArrayList<>();
     }
 
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+
+    public String getCurso() {
+        return curso;
+    }
+
+    public void setCurso(String curso) {
+        this.curso = curso;
+    }
+
+    public String getCarrera() {
+        return carrera;
+    }
+
+    public void setCarrera(String carrera) {
+        this.carrera = carrera;
+    }
+
+    public ArrayList<Double> getCalificaciones() {
+        return calificaciones;
+    }
+
+    public void setCalificaciones(ArrayList<Double> calificaciones) {
+        this.calificaciones = calificaciones;
+    }
+    
+
     
     
 }
