@@ -40,4 +40,16 @@ public class GestorEstudiantes {
         return null;
     }
 
+    public void registrarCalificacion(String codigo, double calificacion) {
+
+        Estudiante estudiante = buscar(codigo);
+
+        if (estudiante == null) {
+            throw new IllegalArgumentException(
+                    "No existe un estudiante con el código: " + codigo
+            );
+        }
+        estudiante.registrarCalificacion(calificacion);
+    }
+
 }
