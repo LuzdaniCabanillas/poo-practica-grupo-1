@@ -221,4 +221,101 @@ public class SistemaEstudiante {
             );
         }
     }
+
+    // REGISTRAR CALIFICACIÓN
+    public static void registrarCalificacion(
+            Scanner teclado,
+            GestorEstudiantes gestorEst) {
+
+        try {
+
+            System.out.println("\n=== REGISTRAR CALIFICACIÓN ===");
+
+            String codigo;
+
+            while (true) {
+                System.out.print("Código del estudiante: ");
+                codigo = teclado.nextLine().trim();
+
+                if (codigo.isEmpty()) {
+                    System.out.println(
+                            "Error: el código no puede estar vacío."
+                    );
+                    continue;
+                }
+
+                if (!codigo.matches("N[0-9]{8}")) {
+                    System.out.println(
+                            "Error: el código debe iniciar con N y tener 8 números."
+                    );
+                    continue;
+                }
+
+                if (gestorEst.buscar(codigo) == null) {
+                    System.out.println(
+                            "Error: no existe un estudiante con el código: "
+                            + codigo
+                    );
+                    continue;
+                }
+
+                
+                break;
+
+            }
+
+            double calificacion;
+
+            while (true) {
+
+                System.out.print("Calificación (0 - 20): ");
+
+                String entrada = teclado.nextLine().trim();
+
+                if (entrada.isEmpty()) {
+                    System.out.println(
+                            "Error: la calificación no puede estar vacía."
+                    );
+                    continue;
+                }
+
+                try {
+
+                    calificacion = Double.parseDouble(entrada);
+
+                } catch (NumberFormatException e) {
+
+                    System.out.println(
+                            "Error: debe ingresar una calificación numérica."
+                    );
+                    continue;
+                }
+
+                if (calificacion < 0 || calificacion > 20) {
+                    System.out.println(
+                            "Error: la calificación debe estar entre 0 y 20."
+                    );
+                    continue;
+                }
+
+                break;
+            }
+
+            gestorEst.registrarCalificacion(
+                    codigo,
+                    calificacion
+            );
+
+            System.out.println(
+                    "Calificación registrada correctamente."
+            );
+
+        } catch (IllegalArgumentException e) {
+
+            System.out.println(
+                    "Error: " + e.getMessage()
+            );
+        }
+    }
+    
 }
