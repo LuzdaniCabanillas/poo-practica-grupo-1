@@ -113,7 +113,7 @@ public class Estudiante {
         System.out.println("Curso: " + curso);
         System.out.println("Carrera:ING DE SISTEMAS COMPUTACIONALES");
         System.out.printf("Promedio: %.1f%n", calcularPromedio());
-        System.out.println("---------------------");
+        System.out.println("-----------------------");
 
     }
     
