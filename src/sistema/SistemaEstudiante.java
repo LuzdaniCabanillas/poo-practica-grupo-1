@@ -94,5 +94,107 @@ public class SistemaEstudiante {
         } while (opcion != 5);
 
         teclado.close();
-    } 
+    }
+
+    // REGISTRAR ESTUDIANTE
+    public static void registrarEstudiante(
+            Scanner teclado,
+            GestorEstudiantes gestorEst) {
+
+        try {
+
+            System.out.println("\n=== REGISTRAR ESTUDIANTE ===");
+
+            String codigo;
+            while (true) {
+
+                System.out.print("Código (N + 8 números): ");
+                codigo = teclado.nextLine().trim();
+
+                if (codigo.isEmpty()) {
+                    System.out.println("Error: el código no puede estar vacío.");
+                    continue;
+                }
+
+                if (!codigo.matches("N[0-9]{8}")) {
+                    System.out.println(
+                            "Error: el código debe iniciar con N y tener 8 números."
+                    );
+                    continue;
+                }
+
+                if (gestorEst.buscar(codigo) != null) {
+                    System.out.println(
+                            "Error: ya existe un estudiante con el código: "
+                            + codigo
+                    );
+                    continue;
+                }
+
+                break;
+            }
+
+            String nombre;
+
+            while (true) {
+
+                System.out.print("Nombre: ");
+                nombre = teclado.nextLine().trim();
+
+                if (nombre.isEmpty()) {
+                    System.out.println("Error: el nombre no puede estar vacío.");
+                    continue;
+                }
+
+                break;
+            }
+
+            String correo = codigo + "@upn.pe";
+            System.out.println(
+                    "Correo generado automáticamente: "
+                    + correo
+            );
+
+            /*
+            System.out.print("Correo: ");
+            String correo = teclado.nextLine();*/
+            
+            String curso;
+
+            while (true) {
+
+                System.out.print("Curso: ");
+                curso = teclado.nextLine().trim();
+
+                if (curso.isEmpty()) {
+                    System.out.println("Error: el curso no puede estar vacío.");
+                    continue;
+                }
+
+                break;
+            }
+
+            String carrera = "ING DE SISTEMAS COMPUTACIONALES";
+
+            
+            Estudiante estudiante = new Estudiante(
+                    codigo,
+                    nombre,
+                    correo,
+                    curso,
+                    carrera
+            );
+
+            
+            gestorEst.registrar(estudiante);
+
+            System.out.println("\nEstudiante registrado correctamente.");
+
+        } catch (IllegalArgumentException e) {
+
+            System.out.println("Error: " + e.getMessage()
+            );
+        }
+    }
+    
 }
