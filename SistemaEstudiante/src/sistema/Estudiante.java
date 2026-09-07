@@ -80,7 +80,7 @@ public class Estudiante {
 
         if (calificacion < 0 || calificacion > 20) {
             throw new IllegalArgumentException(
-                "La calificación debe estar entre 0 y 20."
+                "La calificación debe ser entre 0 y 20."
             );
         }
 
