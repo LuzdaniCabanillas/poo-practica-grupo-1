@@ -33,7 +33,8 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "Rebasing rama-lenin",
+    "git-widget-placeholder": "rama-lenin",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/lenin/IdeaProjects/poo-practica-grupo-1"
   }
