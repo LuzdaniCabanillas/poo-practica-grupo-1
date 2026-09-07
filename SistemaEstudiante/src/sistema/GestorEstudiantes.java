@@ -31,4 +31,13 @@ public class GestorEstudiantes {
         }
     }
 
+    public Estudiante buscar(String codigo) {
+        for (Estudiante e : estudiantes) {
+            if (e.getCodigo().equals(codigo)) {
+                return e;
+            }
+        }
+        return null;
+    }
+
 }
