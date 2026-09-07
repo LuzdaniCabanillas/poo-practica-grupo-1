@@ -21,6 +21,15 @@ public class GestorEstudiantes {
         estudiantes.add(estudiante);
     }
 
+public void listar() {
+        if (estudiantes.isEmpty()) {
+            System.out.println("No hay estudiantes registrados.");
+            return;
+        }
+        for (Estudiante e : estudiantes) {
+            e.mostrarDatos();
+        }
+    }
     
 
 }
