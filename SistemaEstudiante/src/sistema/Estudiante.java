@@ -80,7 +80,7 @@ public class Estudiante {
 
         if (calificacion < 0 || calificacion > 20) {
             throw new IllegalArgumentException(
-                "La calificación debe estar entre 0 y 20."
+                "La calificación debe ser entre 0 y 20."
             );
         }
 
@@ -113,7 +113,7 @@ public class Estudiante {
         System.out.println("Curso: " + curso);
         System.out.println("Carrera:ING DE SISTEMAS COMPUTACIONALES");
         System.out.printf("Promedio: %.1f%n", calcularPromedio());
-        System.out.println("---------------------");
+        System.out.println("-----------------------");
 
     }
     
