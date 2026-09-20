@@ -16,6 +16,12 @@ public class Pedido {
 		System.out.println("Plato agregado: " + plato.getNombre());
 	}
 
+	public void agregarPlato(Plato plato, int catidad) {
+		System.out.println("Plato agregado: "
+				+ plato.getNombre()
+				+ " | Cantidad: " + cantidad);
+	}
+	
 	public double calcularSubTotal() {
 		return 0;
 	}
