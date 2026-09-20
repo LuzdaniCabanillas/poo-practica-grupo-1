@@ -5,21 +5,15 @@ import java.time.LocalDateTime;
 public class Pedido {
 
 	private int id;
-
 	private LocalDateTime fechaHora;
-
 	private EstadoPedido estado;
-
 	private double subTotal;
-
 	private Mesa mesa;
-
 	private Cuenta cuenta;
-
 	private DetallePedido[] detallePedido;
 
-	public void agregarPlato() {
-
+	public void agregarPlato(Plato, plato) {
+		System.out.println("Plato agregado: " + plato.getNombre());
 	}
 
 	public double calcularSubTotal() {
