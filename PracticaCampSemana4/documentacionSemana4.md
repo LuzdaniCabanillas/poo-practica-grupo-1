@@ -1,1 +1,19 @@
-# Documentación del Proyecto
+# Sistema de Gestión de Pedidos en Restaurante
+---
+# ACTIVIDAD DE PRACTICA DE CAMPO SEMANA 4
+
+*Propuesta de sistema para el curso:*
+TECNICAS DE PROGRAMCION ORIENTADA A OBJETOS
+
+*Grupo:* 01
+
+*Integrantes:*
+1. LUZDANY F. CABANILLAS PIZARRO (Coordinadora)
+2. VICTOR JOSUE CASTRO BAYETO
+3. SERGIO GUSTAVO MORI AHUANARI
+4. LENIN ANDERSON MENDO COTRINA
+
+*Docente:*
+> HEBER GOMEZ HURTADO
+
+
