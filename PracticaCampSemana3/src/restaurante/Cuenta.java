@@ -1,4 +1,5 @@
 package restaurante;
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Cuenta {
@@ -16,6 +17,9 @@ public class Cuenta {
 	private EstadoCuenta estado;
 
 	private Pago pago;
+        
+         // Colección de pagos
+       private ArrayList<Pago> pagos = new ArrayList<>();
 
 	public void generarCuenta() {
 
@@ -30,8 +34,46 @@ public class Cuenta {
 	}
 
 	public void registrarPago() {
+            
+             try {
+
+            if (pago == null) {
+                throw new IllegalArgumentException(
+                    "El pago no puede ser nulo"
+                );
+            }
+
+            if (pago.getMonto() <= 0) {
+                throw new IllegalArgumentException(
+                    "El monto debe ser mayor a cero"
+                );
+            }
+
+            pagos.add(pago);
+
+            this.pago = pago;
+
+            System.out.println("Pago registrado correctamente");
+
+        } catch (IllegalArgumentException e) {
+
+            System.out.println("Error: " + e.getMessage());
+
+        }
 
 	}
+        
+            // Mostrar pagos registrados
+        public void mostrarPagos() {
+
+        for (Pago pago : pagos) {
+
+            System.out.println(
+                "Pago: S/ " + pago.getMonto()
+            );
+
+        }
+        }
 
 	public void cambiarEstado() {
 
