@@ -6,21 +6,26 @@ import java.util.ArrayList;
 public class Pedido {
 
 	private int id;
-
 	private LocalDateTime fechaHora;
-
 	private EstadoPedido estado;
-
 	private double subTotal;
-
 	private Mesa mesa;
-
 	private Cuenta cuenta;
-
 
 
 	// Colección de detalles del pedido
     private ArrayList<DetallePedido> detallePedido = new ArrayList<>();
+	private DetallePedido[] detallePedido;
+
+	public void agregarPlato(Plato, plato) {
+		System.out.println("Plato agregado: " + plato.getNombre());
+	}
+
+	public void agregarPlato(Plato plato, int catidad) {
+		System.out.println("Plato agregado: "
+				+ plato.getNombre()
+				+ " | Cantidad: " + cantidad);
+	}
 
     // Agregar un plato al pedido
     public void agregarPlato(DetallePedido detalle) {
