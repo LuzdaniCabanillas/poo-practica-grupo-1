@@ -1,0 +1,20 @@
+Sistema de Gestión de Pedidos en Restaurante
+
+Flujo de trabajo Git:
+
+main
+↓
+develop
+↓
+feature
+↓
+Pull Request
+↓
+revisión
+↓
+develop
+↓
+main
+
+Responsable:
+Luz - Líder del repositorio
