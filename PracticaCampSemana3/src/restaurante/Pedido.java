@@ -21,7 +21,7 @@ public class Pedido {
 				+ plato.getNombre()
 				+ " | Cantidad: " + cantidad);
 	}
-	
+
 	public double calcularSubTotal() {
 		return 0;
 	}
