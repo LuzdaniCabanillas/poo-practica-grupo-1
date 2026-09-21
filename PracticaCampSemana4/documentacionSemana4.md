@@ -253,3 +253,19 @@ El sistema permitirá:
 - Integrante 3: RF-21 al RF-30 → Platos y detalle de pedidos.
 - Integrante 4: RF-31 al RF-40 → Meseros, consultas y ventas.
 
+## Historias de Usuario
+
+#### Historia de Usuario 1
+Como encargado del restaurante, quiero registrar un nuevo cliente con sus datos básicos, para mantener su información almacenada en el sistema.
+
+| Criterio INVEST | ¿Se cumple? |
+|---|---|
+| Independiente | Sí — el registro de clientes tiene una finalidad propia y no necesita pedidos previos. |
+| Negociable | Sí — se pueden acordar los datos básicos obligatorios y las validaciones. |
+| Con Valor | Sí — permite almacenar la información de los clientes. |
+| Estimable | Sí — el equipo puede estimar el esfuerzo de registro, validación y almacenamiento. |
+| Pequeña (Small) | Por confirmar — depende de los campos y reglas que se definan para el registro. |
+| Testeable | Sí — se verifica que registre datos válidos y rechace campos obligatorios vacíos. |
+---
+Para ver todos las historias de usuario ingresar a este link:
+[Historias de Usuario](https://comunidadupnedu-my.sharepoint.com/:x:/g/personal/n00573987_upn_pe/IQCBP8pxlc0zRrajJiiXdO_GAaMPAKylpetERYmXaG0JMXk?e=fBmMmt)
