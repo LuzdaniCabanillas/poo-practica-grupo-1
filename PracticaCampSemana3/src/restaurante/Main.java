@@ -8,6 +8,6 @@ package restaurante;
  *
  * @author Luz
  */
-public class hola {
+public class Main {
     
 }

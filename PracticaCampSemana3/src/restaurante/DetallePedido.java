@@ -11,8 +11,22 @@ public class DetallePedido {
 
 	private Plato plato;
 
-	public void calcularSubTotal() {
+        
+    public DetallePedido(int id, int cantidad, double precioUnitario) {
 
-	}
+        this.id = id;
+        this.cantidad = cantidad;
+        this.precioUnitario = precioUnitario;
+
+        calcularSubTotal();
+    }
+
+    public void calcularSubTotal() {
+        subTotal = cantidad * precioUnitario;
+    }
+
+    public double getSubTotal() {
+        return subTotal;
+    }
 
 }
